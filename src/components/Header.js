@@ -2,6 +2,7 @@ import React from 'react';
 
 const Header = ({titulo}) => {
     return ( 
+        
         <nav>
             <div className='nav_wrapper light-blue darken-2'>
                 <a href="#!" className='brand-logo'> {titulo} </a>
