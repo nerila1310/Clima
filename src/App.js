@@ -12,11 +12,10 @@ function App() {
     });
 
     const [consultar, guardarConsultar] = useState(false);
-
     const [resultado, guardarResultado] = useState({});
-
     const [error, guardarError] = useState(false);
 
+    //Extraemos los datos
     const {ciudad, pais} = busqueda;
 
     useEffect(() => {
@@ -39,11 +38,11 @@ function App() {
                 }else{
                     guardarError(false);
                 }
-
             }
         }
 
         consultarAPI();
+        // eslint-disable-next-line
     }, [consultar]);
 
 
